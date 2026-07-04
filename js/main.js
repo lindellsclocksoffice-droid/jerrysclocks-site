@@ -78,7 +78,7 @@ if (hh) hh.style.transform = 'rotate(' + hDeg + 'deg)';
 if (mh) {
   mh.style.animation = 'none';
   mh.style.transform = 'rotate(' + mDeg + 'deg)';
-  setTimeout(function() { mh.style.animation = 'rot 60s linear infinite'; }, 100);
+  setTimeout(function() { mh.style.animation = 'rot  33s linear infinite'; }, 100);
 }
 
 
