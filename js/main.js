@@ -86,7 +86,6 @@ if (mh) {
    CONTACT FORM — BASIC SUBMIT HANDLER
 ───────────────────────────────────────── */
 var submitBtn = document.querySelector('.form-submit');
-<<<<<<< HEAD
 
 /* Shows a calm inline message under a field instead of a jarring alert()
    popup — easier to read and less startling for older visitors. */
@@ -111,31 +110,20 @@ function clearFieldError(input) {
   group.classList.remove('has-error');
 }
 
-=======
->>>>>>> 24e17df3c630b0660b19d1bbc6bf309fc176fc47
 if (submitBtn) {
   submitBtn.addEventListener('click', function() {
     var fname = document.querySelector('input[placeholder="Margaret"]');
     var phone = document.querySelector('input[type="tel"]');
-<<<<<<< HEAD
     clearFieldError(fname);
     clearFieldError(phone);
 
     if (fname && fname.value.trim() === '') {
       showFieldError(fname, 'Please enter your name so Jerry knows who to ask for.');
-=======
-    if (fname && fname.value.trim() === '') {
-      alert('Please enter your name before submitting.');
->>>>>>> 24e17df3c630b0660b19d1bbc6bf309fc176fc47
       fname.focus();
       return;
     }
     if (phone && phone.value.trim() === '') {
-<<<<<<< HEAD
       showFieldError(phone, 'Please enter a phone number so Jerry can call you back.');
-=======
-      alert('Please enter a phone number so Jerry can reach you.');
->>>>>>> 24e17df3c630b0660b19d1bbc6bf309fc176fc47
       phone.focus();
       return;
     }
@@ -146,7 +134,6 @@ if (submitBtn) {
     submitBtn.disabled = true;
   });
 }
-<<<<<<< HEAD
 
 
 /* ─────────────────────────────────────────
@@ -163,5 +150,3 @@ if (submitBtn) {
     '<a class="scb-quote" href="/contact-us/" aria-label="Get a free quote">✉️ Get a Free Quote</a>';
   document.body.appendChild(bar);
 })();
-=======
->>>>>>> 24e17df3c630b0660b19d1bbc6bf309fc176fc47
