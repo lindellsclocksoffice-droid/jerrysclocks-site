@@ -1,0 +1,6 @@
+# Legacy URL redirects — preserves old IONOS site SEO
+/about-us.html   /about-us/   301
+/gallery.html    /gallery/    301
+/contact-us.html /contact-us/ 301
+/whats-new.html  /whats-new/  301
+/sitemap.html    /sitemap.xml 301
