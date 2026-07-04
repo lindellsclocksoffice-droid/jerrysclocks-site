@@ -86,17 +86,56 @@ if (mh) {
    CONTACT FORM — BASIC SUBMIT HANDLER
 ───────────────────────────────────────── */
 var submitBtn = document.querySelector('.form-submit');
+<<<<<<< HEAD
+
+/* Shows a calm inline message under a field instead of a jarring alert()
+   popup — easier to read and less startling for older visitors. */
+function showFieldError(input, message) {
+  if (!input) return;
+  var group = input.closest('.form-group') || input.parentElement;
+  var err = group.querySelector('.form-error');
+  if (!err) {
+    err = document.createElement('div');
+    err.className = 'form-error';
+    group.appendChild(err);
+  }
+  err.textContent = message;
+  err.classList.add('show');
+  group.classList.add('has-error');
+}
+function clearFieldError(input) {
+  if (!input) return;
+  var group = input.closest('.form-group') || input.parentElement;
+  var err = group.querySelector('.form-error');
+  if (err) err.classList.remove('show');
+  group.classList.remove('has-error');
+}
+
+=======
+>>>>>>> 24e17df3c630b0660b19d1bbc6bf309fc176fc47
 if (submitBtn) {
   submitBtn.addEventListener('click', function() {
     var fname = document.querySelector('input[placeholder="Margaret"]');
     var phone = document.querySelector('input[type="tel"]');
+<<<<<<< HEAD
+    clearFieldError(fname);
+    clearFieldError(phone);
+
+    if (fname && fname.value.trim() === '') {
+      showFieldError(fname, 'Please enter your name so Jerry knows who to ask for.');
+=======
     if (fname && fname.value.trim() === '') {
       alert('Please enter your name before submitting.');
+>>>>>>> 24e17df3c630b0660b19d1bbc6bf309fc176fc47
       fname.focus();
       return;
     }
     if (phone && phone.value.trim() === '') {
+<<<<<<< HEAD
+      showFieldError(phone, 'Please enter a phone number so Jerry can call you back.');
+=======
       alert('Please enter a phone number so Jerry can reach you.');
+>>>>>>> 24e17df3c630b0660b19d1bbc6bf309fc176fc47
       phone.focus();
       return;
     }
@@ -107,3 +146,22 @@ if (submitBtn) {
     submitBtn.disabled = true;
   });
 }
+<<<<<<< HEAD
+
+
+/* ─────────────────────────────────────────
+   PERSISTENT MOBILE "CALL NOW" BAR
+   Older visitors often browse on a phone and don't want to hunt
+   for a phone number while scrolling — keep it one tap away, always.
+───────────────────────────────────────── */
+(function() {
+  if (document.querySelector('.sticky-call-bar')) return;
+  var bar = document.createElement('div');
+  bar.className = 'sticky-call-bar';
+  bar.innerHTML =
+    '<a class="scb-call" href="tel:8772450083" aria-label="Call Jerry now">📞 Call Now</a>' +
+    '<a class="scb-quote" href="/contact-us/" aria-label="Get a free quote">✉️ Get a Free Quote</a>';
+  document.body.appendChild(bar);
+})();
+=======
+>>>>>>> 24e17df3c630b0660b19d1bbc6bf309fc176fc47
