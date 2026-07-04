@@ -771,7 +771,7 @@ textarea:focus-visible, select:focus-visible {
   color: var(--white);
 }
 .sticky-call-bar .scb-call { background: var(--brass); color: var(--navy); }
-.sticky-call-bar .scb-quote { background: var(--navy2); }
+
 @media (min-width: 641px) { .sticky-call-bar { display: none !important; } }
 @media (max-width: 640px) { body { padding-bottom:  33px; } }
 
