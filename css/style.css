@@ -703,13 +703,13 @@ footer { color: rgba(255,255,255,0.82); }
 
 /* ---- Bigger, easier-to-tap navigation ---- */
 /* Give the nav row more breathing room than the 1100px content width,
-   and stop it wrapping — wrapping was orphaning "Get a Quote" onto its
+   and stop it wrapping — wrapping was orphaning " Call Us" onto its
    own cramped row under the logo. */
 nav { max-width: 1280px; gap: 1rem; }
 .nav-menu { flex-wrap: nowrap; gap: 0.1rem; }
 .nav-menu a { font-size: 0.95rem; padding: 0.6rem 0.85rem; white-space: nowrap; }
 
-/* "Get a Quote" now lives as its own element after </ul>, not inside the
+/* " Call Us" now lives as its own element after </ul>, not inside the
    menu list, so it can't get stranded when the menu wraps — it's pinned
    to the far right, next to the hamburger, with clear separation. */
 .nav-cta-btn {
@@ -781,7 +781,7 @@ textarea:focus-visible, select:focus-visible {
   .nav-cta-btn { font-size: 0.85rem; padding: 0.55rem 1rem; }
 }
 @media (max-width: 640px) {
-  /* Mobile already has "Get a Quote" inside the hamburger menu (.mobile-menu-cta)
+  /* Mobile already has " Call Us" inside the hamburger menu (.mobile-menu-cta)
      and the persistent bottom call bar — no need to also show it in the header. */
   .nav-cta-btn { display: none; }
 }
