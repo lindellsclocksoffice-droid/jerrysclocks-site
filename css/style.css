@@ -785,3 +785,13 @@ textarea:focus-visible, select:focus-visible {
      and the persistent bottom call bar — no need to also show it in the header. */
   .nav-cta-btn { display: none; }
 }
+.svc-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svc-icon .fa-solid {
+  font-size: 2rem;
+  color: var(--brass);
+}
