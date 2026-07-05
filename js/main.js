@@ -146,6 +146,6 @@ if (submitBtn) {
   var bar = document.createElement('div');
   bar.className = 'sticky-call-bar';
   bar.innerHTML =
-    '<a class="scb-call" href="tel:8772450083" aria-label="Call Jerry now">📞 Call Now</a>'
+    '<a class="scb-call" href="tel:8772450083" aria-label="Call Jerry now"><i class="fa-solid fa-phone"></i> Call Now</a>'
   document.body.appendChild(bar);
 })();
