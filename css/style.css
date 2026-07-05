@@ -313,7 +313,7 @@ nav {
 }
 .svc-card:hover { border-color: var(--brass); box-shadow: 0 4px 20px rgba(201,168,76,0.1); }
 .svc-icon {
-  width: 48px; height: 48px; background: var(--navy); border-radius: 10px;
+  width: 48px; height: 48px; background: transparent; border-radius: 10px;
   display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; font-size: 1.3rem;
 }
 .svc-title { font-weight: 700; font-size: 1.05rem; color: var(--navy); margin-bottom: 0.5rem; }
@@ -393,7 +393,7 @@ nav {
 }
 .state-card:hover { border-color: var(--brass); box-shadow: 0 6px 24px rgba(201,168,76,0.12); transform: translateY(-2px); }
 .state-card-icon {
-  width: 48px; height: 48px; background: var(--navy); border-radius: 10px;
+  width: 48px; height: 48px; background: transparent; border-radius: 10px;
   display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; font-size: 1.3rem;
 }
 .state-card-title { font-family: Georgia, serif; font-weight: 700; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.5rem; }
@@ -794,4 +794,20 @@ textarea:focus-visible, select:focus-visible {
 .svc-icon .fa-solid {
   font-size: 2rem;
   color: var(--brass);
+}
+.state-icon, .area-icon {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.state-icon .fa-solid,
+.area-icon .fa-solid {
+  font-size: 2rem;
+  color: var(--brass);
+  background: transparent;
 }
